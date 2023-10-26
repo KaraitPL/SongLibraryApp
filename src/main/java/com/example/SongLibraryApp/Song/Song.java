@@ -23,7 +23,7 @@ public class Song implements Comparable<Song>, Serializable {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "year")
+    @Column(name = "release_year")
     private int year;
 
     @ManyToOne
@@ -32,7 +32,7 @@ public class Song implements Comparable<Song>, Serializable {
 
     public static class SongBuilder {
         public Song build() {
-            UUID id = new UUID(3,4); //TODO Change how UUID is created
+            UUID id = UUID.randomUUID();
             Song song = new Song(id, this.name, this.year, this.singer);
             singer.addSong(song);
             return song;

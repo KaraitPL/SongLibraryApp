@@ -1,10 +1,7 @@
 package com.example.SongLibraryApp.Singer;
 
 import com.example.SongLibraryApp.Song.Song;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
@@ -22,7 +19,7 @@ import java.util.UUID;
 @Table(name = "singers")
 public class Singer implements Comparable<Singer>, Serializable {
 
-    @Column(name = "id")
+    @Id
     private UUID id;
 
     @Column(name = "name")
@@ -31,9 +28,18 @@ public class Singer implements Comparable<Singer>, Serializable {
     @Column(name = "age")
     private int age;
 
-    @OneToMany(mappedBy = "singer")
+    @OneToMany(mappedBy = "singer", fetch = FetchType.LAZY)
     @Builder.Default
     private List<Song> songs = new ArrayList<>();
+
+    //Nie wiadmo czy będzie działało -> podczas tworzenia singer nie
+    public static class SingerBuilder {
+        public Singer build(){
+            UUID id = UUID.randomUUID();
+            Singer singer = new Singer(id, this.name, this.age, new ArrayList<Song>());
+            return singer;
+        }
+    }
 
 
 
