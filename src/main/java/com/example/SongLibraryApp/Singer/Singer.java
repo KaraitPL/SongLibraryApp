@@ -28,18 +28,17 @@ public class Singer implements Comparable<Singer>, Serializable {
     @Column(name = "age")
     private int age;
 
-    @OneToMany(mappedBy = "singer")
+    @OneToMany(mappedBy = "singer", fetch = FetchType.LAZY)
     @Builder.Default
     private List<Song> songs = new ArrayList<>();
 
-    //Nie wiadmo czy będzie działało -> podczas tworzenia singer nie
-    public static class SingerBuilder {
-        public Singer build(){
-            UUID id = UUID.randomUUID();
-            Singer singer = new Singer(id, this.name, this.age, new ArrayList<Song>());
-            return singer;
-        }
-    }
+//    public static class SingerBuilder {
+//        public Singer build(){
+//            UUID id = UUID.randomUUID();
+//            Singer singer = new Singer(id, this.name, this.age, new ArrayList<Song>());
+//            return singer;
+//        }
+//    }
 
 
 

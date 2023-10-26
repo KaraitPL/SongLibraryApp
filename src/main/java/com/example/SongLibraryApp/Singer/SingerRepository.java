@@ -12,4 +12,6 @@ public interface SingerRepository extends JpaRepository<Singer, UUID> {
     List<Singer> findAll();
 
     Optional<Singer> findById(UUID id);
+
+    Singer findByName(String name);
 }

@@ -3,6 +3,7 @@ package com.example.SongLibraryApp.Song;
 import com.example.SongLibraryApp.Singer.Singer;
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.Hibernate;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -30,14 +31,14 @@ public class Song implements Comparable<Song>, Serializable {
     @JoinColumn(name = "singer")
     private Singer singer;
 
-    public static class SongBuilder {
-        public Song build() {
-            UUID id = UUID.randomUUID();
-            Song song = new Song(id, this.name, this.year, this.singer);
-            singer.addSong(song);
-            return song;
-        }
-    }
+//    public static class SongBuilder {
+//        public Song build() {
+//            UUID id = UUID.randomUUID();
+//            Song song = new Song(id, this.name, this.year, this.singer);
+//            singer.addSong(song);
+//            return song;
+//        }
+//    }
 
     @Override
     public String toString() {

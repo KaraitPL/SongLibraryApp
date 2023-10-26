@@ -28,6 +28,8 @@ public class SingerService {
 
     public Optional<Singer> findById(UUID id) { return singerRepository.findById(id); }
 
+    public Singer findByName(String name){ return singerRepository.findByName(name); }
+
 
 
 }

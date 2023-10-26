@@ -61,7 +61,7 @@ public class CommandRunner implements CommandLineRunner {
                         UUID id = UUID.fromString(input);
                         if (singerService.findById(id).isPresent()) {
                             Singer singer = singerService.findById(id).get();
-                            Song newSong = Song.builder().name(name).year(yearOfRelease).singer(singer).build();
+                            Song newSong = Song.builder().id(UUID.fromString("ffdffd02-505c-4d1c-af3d-f3555c9b9543")).name(name).year(yearOfRelease).singer(singer).build();
                             songService.create(newSong);
                             break;
                         }
@@ -83,6 +83,7 @@ public class CommandRunner implements CommandLineRunner {
                 case "delete_song" -> {
                     UUID uuid = UUID.fromString(scanner.next());
                     songService.delete(uuid);
+                    System.out.println("Song successfully deleted");
 
 //                    List<Song> availableSongs = songService.findAll();
 //                    System.out.println("Choose song to delete:");
@@ -96,7 +97,6 @@ public class CommandRunner implements CommandLineRunner {
 //                            break;
 //                        }
 //                    }
-//                    System.out.println("Song successfully deleted");
                 }
                 case "quit" -> {
                     break main_loop;
