@@ -32,29 +32,6 @@ public class CommandRunner implements CommandLineRunner {
                 case "get_characters" -> {
                     System.out.println("get");
                 }
-                case "get_character" -> {
-                    UUID uuid = UUID.fromString(scanner.next());
-                    try {
-                        System.out.println("get2");
-                    } catch (NoSuchElementException ex) {
-                        System.out.println("NOT_FOUND");
-                    }
-                }
-                case "get_character_portrait" -> {
-                    UUID uuid = UUID.fromString(scanner.next());
-                    try {
-                        System.out.println("get3");
-                    } catch (NoSuchElementException ex) {
-                        System.out.println("NOT_FOUND");
-                    }
-                }
-                case "delete_character" -> {
-                    try {
-                        UUID uuid = UUID.fromString(scanner.next());
-                    } catch (NoSuchElementException ex) {
-                        System.out.println("Not Found");
-                    }
-                }
                 case "quit" -> {
                     break main_loop;
                 }
