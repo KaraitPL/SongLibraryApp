@@ -41,8 +41,9 @@ public class Song implements Comparable<Song>, Serializable {
 
     @Override
     public String toString() {
-        return "Song{" +
-                "name='" + name + '\'' +
+        return "\nSong{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", year=" + year +
                 ", singer=" + singer.getName() +
                 "}";

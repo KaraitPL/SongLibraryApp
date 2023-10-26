@@ -28,7 +28,7 @@ public class Singer implements Comparable<Singer>, Serializable {
     @Column(name = "age")
     private int age;
 
-    @OneToMany(mappedBy = "singer", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "singer")
     @Builder.Default
     private List<Song> songs = new ArrayList<>();
 
@@ -47,9 +47,9 @@ public class Singer implements Comparable<Singer>, Serializable {
     @Override
     public String toString() {
         return "\nSinger{" +
-                "name='" + name + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", age=" + age +
-                ", songs=" + songs +
                 "}";
     }
 
@@ -88,7 +88,4 @@ public class Singer implements Comparable<Singer>, Serializable {
         songs.add(song);
     }
 
-    public void sortSongs(){
-        songs.sort(Song::compareTo);
-    }
 }
