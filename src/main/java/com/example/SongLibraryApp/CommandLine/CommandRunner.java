@@ -61,7 +61,7 @@ public class CommandRunner implements CommandLineRunner {
                         UUID id = UUID.fromString(input);
                         if (singerService.findById(id).isPresent()) {
                             Singer singer = singerService.findById(id).get();
-                            Song newSong = Song.builder().id(UUID.fromString("ffdffd02-505c-4d1c-af3d-f3555c9b9543")).name(name).year(yearOfRelease).singer(singer).build();
+                            Song newSong = Song.builder().id(UUID.randomUUID()).name(name).year(yearOfRelease).singer(singer).build();
                             songService.create(newSong);
                             break;
                         }
