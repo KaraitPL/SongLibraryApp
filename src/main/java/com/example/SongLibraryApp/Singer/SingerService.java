@@ -18,6 +18,10 @@ public class SingerService {
         this.singerRepository = singerRepository;
     }
 
+    public Singer findByName(String name){ return singerRepository.findByName(name); }
+
+    public Optional<Singer> findById(UUID id) { return singerRepository.findById(id); }
+
     public List<Singer> findAll(){
         return singerRepository.findAll();
     }
@@ -26,9 +30,9 @@ public class SingerService {
         singerRepository.save(singer);
     }
 
-    public Optional<Singer> findById(UUID id) { return singerRepository.findById(id); }
-
-    public Singer findByName(String name){ return singerRepository.findByName(name); }
+    public void delete(UUID id){
+        singerRepository.findById(id).ifPresent(singerRepository::delete);
+    }
 
 
 
