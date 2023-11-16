@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.function.Function;
 
+@Component
 public class SongToResponseFunction implements Function<Song, GetSongResponse> {
     @Override
     public GetSongResponse apply(Song entity) {

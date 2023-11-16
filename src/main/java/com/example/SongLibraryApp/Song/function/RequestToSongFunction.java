@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 import java.util.UUID;
 import java.util.function.BiFunction;
 
+@Component
 public class RequestToSongFunction implements BiFunction<UUID, PutSongRequest, Song> {
     @Override
     public Song apply(UUID id, PutSongRequest request) {

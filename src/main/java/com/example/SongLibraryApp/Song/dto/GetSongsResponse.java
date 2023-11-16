@@ -26,6 +26,6 @@ public class GetSongsResponse {
         private String name;
     }
 
-    //@Singular
+    @Singular
     private List<Song> songs;
 }

@@ -28,7 +28,7 @@ public class Singer implements Comparable<Singer>, Serializable {
     @Column(name = "age")
     private int age;
 
-    @OneToMany(mappedBy = "singer", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "singer", cascade = CascadeType.REMOVE)
     @Builder.Default
     private List<Song> songs = new ArrayList<>();
 

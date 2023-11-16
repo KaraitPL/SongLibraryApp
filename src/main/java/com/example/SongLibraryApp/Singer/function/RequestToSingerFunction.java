@@ -6,10 +6,12 @@ import com.example.SongLibraryApp.Singer.dto.PutSingerRequest;
 import com.example.SongLibraryApp.Song.Song;
 import com.example.SongLibraryApp.Song.dto.GetSongResponse;
 import com.example.SongLibraryApp.Song.dto.PutSongRequest;
+import org.springframework.stereotype.Component;
 
 import java.util.UUID;
 import java.util.function.BiFunction;
 
+@Component
 public class RequestToSingerFunction implements BiFunction<UUID, PutSingerRequest, Singer> {
     @Override
     public Singer apply(UUID id, PutSingerRequest request) {
