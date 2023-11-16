@@ -14,5 +14,5 @@ import java.util.UUID;
 public class PutSongRequest {
     private String name;
     private int releaseYear;
-    private UUID Singer;
+    private UUID singer;
 }

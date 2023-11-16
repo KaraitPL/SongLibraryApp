@@ -1,103 +1,112 @@
-### Get all characters
+### Get all songs
 
-GET http://localhost:8080/api/characters
+GET http://localhost:8080/api/songs
 
-### Get single character
+### Get single song
 
-GET http://localhost:8080/api/characters/525d3e7b-bb1f-4c13-bf17-926d1a12e4c0
+GET http://localhost:8080/api/songs/ffdffd02-505c-4d1c-af3d-f3555c9b9827
 
-### Get single character, not existing
+### Get single song, not existing
 
-GET http://localhost:8080/api/characters/3c6f1eb1-8069-44ab-988f-d7fed2b65d87
+GET http://localhost:8080/api/songs/3c6f1eb1-8069-44ab-988f-d7fed2b65d88
 
-### Get character portrait
+### Create new song
 
-GET http://localhost:8080/api/characters/525d3e7b-bb1f-4c13-bf17-926d1a12e4c0/portrait
-
-### Get character portrait, not existing
-
-GET http://localhost:8080/api/characters/3c6f1eb1-8069-44ab-988f-d7fed2b65d87/portrait
-
-### Get user characters
-
-GET http://localhost:8080/api/users/81e1c2a9-7f57-439b-b53d-6db88b071e4e/characters
-
-### Get user characters, empty
-
-GET http://localhost:8080/api/users/c4804e0f-769e-4ab9-9ebe-0578fb4f00a6/characters
-
-### Getr user characters, not existing
-
-GET http://localhost:8080/api/users/84dfc3e6-99bd-4535-9452-54ccd7edf08e/characters
-
-### Get profession characters
-
-GET http://localhost:8080/api/professions/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76/characters
-
-### Get profession characters, not existing
-
-GET http://localhost:8080/api/professions/ac4e2683-b2ba-4695-94d9-806a97fce71e/characters
-
-### Create new character
-
-PUT http://localhost:8080/api/characters/3c6f1eb1-8069-44ab-988f-d7fed2b65d87
+PUT http://localhost:8080/api/songs/ffdffd02-505c-4d1c-af3d-f3555c9b9827
 Content-Type: application/json
 Authorization: Basic a2V2aW46dXNlcnVzZXI=
 
 {
-  "name": "Sigrid",
-  "background": "No one special.",
-  "age": 18,
-  "strength": 12,
-  "constitution": 12,
-  "charisma": 12,
-  "health": 24,
-  "profession": "f5875513-bf7b-4ae1-b8a5-5b70a1b90e76"
+  "name": "Moves Like Jagger",
+  "releaseYear": 2010,
+  "singer": "ffdffd02-505c-4d1c-af3d-f3555c9b9829"
 }
 
-### Create character portrait
+### Delete song
 
-PUT http://localhost:8080/api/characters/3c6f1eb1-8069-44ab-988f-d7fed2b65d87/portrait
-Content-Type: multipart/form-data; boundary=boundary
+DELETE http://localhost:8080/api/songs/ffdffd02-505c-4d1c-af3d-f3555c9b9822
 
---boundary
-Content-Disposition: form-data; name="request"; filename="sigrid.png'
+### Patch song
 
-< src/main/resources/pl/edu/pg/eti/kask/rpg/avatar/sigrid.png
---boundary--
+PUT http://localhost:8080/api/songs/ffdffd02-505c-4d1c-af3d-f3555c9b9827/update
+Content-Type: application/json
+Authorization: Basic a2V2aW46dXNlcnVzZXI=
 
-### Delete character.
+{
+  "name": "Moves Like Jagger",
+  "releaseYear": 1794
+}
 
-DELETE http://localhost:8080/api/characters/3c6f1eb1-8069-44ab-988f-d7fed2b65d87
 
-### Get all professions
 
-GET http://localhost:8080/api/professions
 
-### Get single profession
 
-GET http://localhost:8080/api/professions/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76
+### Get all singers
 
-### Get single profession, not existing
+GET http://localhost:8080/api/singers
 
-GET http://localhost:8080/api/professions/ac4e2683-b2ba-4695-94d9-806a97fce71e
+### Get single singer
 
-### Delete profession
+GET http://localhost:8080/api/singers/ffdffd02-505c-4d1c-af3d-f3555c9b9829
 
-DELETE http://localhost:8080/api/professions/f5875513-bf7b-4ae1-b8a5-5b70a1b90e76
+### Get single singer, not existing
 
-### Get all users
+GET http://localhost:8080/api/singers/ffdffd02-505c-4d1c-af3d-f3555c9b9831
 
-GET http://localhost:8080/api/users
+### Get singer songs
 
-### Get single user
+GET http://localhost:8080/api/singers/ffdffd02-505c-4d1c-af3d-f3555c9b9829/songs
 
-GET http://localhost:8080/api/users/81e1c2a9-7f57-439b-b53d-6db88b071e4e
+### Get singer songs, not existing
 
-### Get single user, not existing
+GET http://localhost:8080/api/singers/ffdffd02-505c-4d1c-af3d-f3555c9b9831/songs
 
-GET http://localhost:8080/api/users/84dfc3e6-99bd-4535-9452-54ccd7edf08e
+### Create new singer
 
-### Delete user
+PUT http://localhost:8080/api/singer/ffdffd02-505c-4d1c-af3d-f3555c9b9831
+Content-Type: application/json
+Authorization: Basic a2V2aW46dXNlcnVzZXI=
 
-DELETE http://localhost:8080/api/users/81e1c2a9-7f57-439b-b53d-6db88b071e4e
+{
+  "name": "Elton John",
+  "age": 76
+}
+
+### Delete singer
+
+DELETE http://localhost:8080/api/singers/ffdffd02-505c-4d1c-af3d-f3555c9b9830
+
+### Patch singer
+
+PUT http://localhost:8080/api/singer/ffdffd02-505c-4d1c-af3d-f3555c9b9830
+Content-Type: application/json
+Authorization: Basic a2V2aW46dXNlcnVzZXI=
+
+{
+  "name": "Justin Timberlake",
+  "age": 75
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

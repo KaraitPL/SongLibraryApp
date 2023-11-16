@@ -22,6 +22,7 @@ public class GetSongResponse {
     @EqualsAndHashCode
     public static class Singer{
         private UUID id;
+        private int age;
         private String name;
     }
 

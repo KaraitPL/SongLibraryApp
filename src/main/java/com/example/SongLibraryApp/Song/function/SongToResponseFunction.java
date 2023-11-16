@@ -17,6 +17,7 @@ public class SongToResponseFunction implements Function<Song, GetSongResponse> {
                 .singer(GetSongResponse.Singer.builder()
                         .id(entity.getSinger().getId())
                         .name(entity.getSinger().getName())
+                        .age(entity.getSinger().getAge())
                         .build())
                 .build();
     }

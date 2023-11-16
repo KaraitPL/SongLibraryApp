@@ -12,8 +12,8 @@ public class UpdateSongWithRequestFunction implements BiFunction<Song, PatchSong
     public Song apply(Song entity, PatchSongRequest request) {
         return Song.builder()
                 .id(entity.getId())
-                .name(entity.getName())
-                .year(entity.getYear())
+                .name(request.getName())
+                .year(request.getReleaseYear())
                 .build();
     }
 }

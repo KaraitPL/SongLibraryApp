@@ -13,8 +13,8 @@ public class UpdateSingerWithRequestFunction implements BiFunction<Singer, Patch
     public Singer apply(Singer entity, PatchSingerRequest request) {
         return Singer.builder()
                 .id(entity.getId())
-                .name(entity.getName())
-                .age(entity.getAge())
+                .name(request.getName())
+                .age(request.getAge())
                 .build();
     }
 }

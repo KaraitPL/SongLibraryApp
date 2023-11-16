@@ -2,6 +2,7 @@ package com.example.SongLibraryApp.Song.controller;
 
 import com.example.SongLibraryApp.Song.dto.GetSongResponse;
 import com.example.SongLibraryApp.Song.dto.GetSongsResponse;
+import com.example.SongLibraryApp.Song.dto.PatchSongRequest;
 import com.example.SongLibraryApp.Song.dto.PutSongRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -38,6 +39,15 @@ public interface SongController {
             UUID id,
             @RequestBody
             PutSongRequest request
+    );
+
+    @PutMapping("/api/songs/{id}/update")
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    void patchSong(
+            @PathVariable("id")
+            UUID id,
+            @RequestBody
+            PatchSongRequest request
     );
 
     @DeleteMapping("/api/songs/{id}")

@@ -16,6 +16,7 @@ public class SongsToResponseFunction implements Function<List<Song>, GetSongsRes
                         .map(song -> GetSongsResponse.Song.builder()
                                 .id(song.getId())
                                 .name(song.getName())
+                                .releaseYear(song.getYear())
                                 .build())
                         .toList())
                 .build();

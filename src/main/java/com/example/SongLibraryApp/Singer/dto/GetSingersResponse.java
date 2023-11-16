@@ -24,6 +24,7 @@ public class GetSingersResponse {
     public static class Singer{
         private UUID id;
         private String name;
+        private int age;
     }
 
     private List<Singer> singers;

@@ -23,6 +23,7 @@ public class GetSongsResponse {
     @EqualsAndHashCode
     public static class Song{
         private UUID id;
+        private int releaseYear;
         private String name;
     }
 

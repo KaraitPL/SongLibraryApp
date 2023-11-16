@@ -16,6 +16,7 @@ public class SingersToResponseFunction implements Function<List<Singer>, GetSing
                         .map(singer -> GetSingersResponse.Singer.builder()
                                 .id(singer.getId())
                                 .name(singer.getName())
+                                .age(singer.getAge())
                                 .build())
                         .toList())
                 .build();

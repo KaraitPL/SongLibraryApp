@@ -3,10 +3,12 @@ package com.example.SongLibraryApp.Song.controller;
 import com.example.SongLibraryApp.Song.SongService;
 import com.example.SongLibraryApp.Song.dto.GetSongResponse;
 import com.example.SongLibraryApp.Song.dto.GetSongsResponse;
+import com.example.SongLibraryApp.Song.dto.PatchSongRequest;
 import com.example.SongLibraryApp.Song.dto.PutSongRequest;
 import com.example.SongLibraryApp.Song.function.RequestToSongFunction;
 import com.example.SongLibraryApp.Song.function.SongToResponseFunction;
 import com.example.SongLibraryApp.Song.function.SongsToResponseFunction;
+import com.example.SongLibraryApp.Song.function.UpdateSongWithRequestFunction;
 import lombok.extern.java.Log;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -23,18 +25,21 @@ public class SongControllerImpl implements SongController{
     private final SongToResponseFunction songToResponse;
     private final SongsToResponseFunction songsToResponse;
     private final RequestToSongFunction requestToSong;
+    private final UpdateSongWithRequestFunction updateSong;
 
     @Autowired
     public SongControllerImpl(
             SongService service,
             SongToResponseFunction songToResponse,
             SongsToResponseFunction songsToResponse,
-            RequestToSongFunction requestToSong
+            RequestToSongFunction requestToSong,
+            UpdateSongWithRequestFunction updateSong
     ){
         this.service = service;
         this.songToResponse = songToResponse;
         this.songsToResponse = songsToResponse;
         this.requestToSong = requestToSong;
+        this.updateSong = updateSong;
     }
 
     @Override
@@ -59,6 +64,11 @@ public class SongControllerImpl implements SongController{
     @Override
     public void putSong(UUID id, PutSongRequest request) {
         service.create(requestToSong.apply(id, request));
+    }
+
+    @Override
+    public void patchSong(UUID id, PatchSongRequest request) {
+        service.create(updateSong.apply(service.find(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND)), request));
     }
 
     @Override
