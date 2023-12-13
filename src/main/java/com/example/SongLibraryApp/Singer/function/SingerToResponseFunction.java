@@ -14,6 +14,12 @@ public class SingerToResponseFunction implements Function<Singer, GetSingerRespo
                 .id(entity.getId())
                 .name(entity.getName())
                 .age(entity.getAge())
+                .songs(entity.getSongs().stream()
+                        .map(song -> GetSingerResponse.Song.builder()
+                                .name(song.getName())
+                                .releaseYear(song.getYear())
+                                .build())
+                        .toList())
                 .build();
     }
 }

@@ -2,6 +2,7 @@ package com.example.SongLibraryApp.Singer.controller;
 
 import com.example.SongLibraryApp.Singer.dto.GetSingerResponse;
 import com.example.SongLibraryApp.Singer.dto.GetSingersResponse;
+import com.example.SongLibraryApp.Singer.dto.PatchSingerRequest;
 import com.example.SongLibraryApp.Singer.dto.PutSingerRequest;
 import com.example.SongLibraryApp.Song.dto.PutSongRequest;
 import org.springframework.http.HttpStatus;
@@ -24,7 +25,6 @@ public interface SingerController {
             UUID id
     );
 
-    //Własne
     @PutMapping("/api/singer/{id}")
     @ResponseStatus(HttpStatus.CREATED)
     void putSinger(
@@ -32,6 +32,15 @@ public interface SingerController {
             UUID id,
             @RequestBody
             PutSingerRequest request
+    );
+
+    @PatchMapping("/api/singer/{id}")
+    @ResponseStatus(HttpStatus.OK)
+    void patchSinger(
+            @PathVariable("id")
+            UUID id,
+            @RequestBody
+            PatchSingerRequest request
     );
 
     @DeleteMapping("/api/singers/{id}")

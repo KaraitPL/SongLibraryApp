@@ -28,7 +28,7 @@ DELETE http://localhost:8080/api/songs/ffdffd02-505c-4d1c-af3d-f3555c9b9822
 
 ### Patch song
 
-PUT http://localhost:8080/api/songs/ffdffd02-505c-4d1c-af3d-f3555c9b9827/update
+PATCH http://localhost:8080/api/songs/ffdffd02-505c-4d1c-af3d-f3555c9b9827
 Content-Type: application/json
 Authorization: Basic a2V2aW46dXNlcnVzZXI=
 
@@ -36,6 +36,9 @@ Authorization: Basic a2V2aW46dXNlcnVzZXI=
   "name": "Moves Like Jagger",
   "releaseYear": 1794
 }
+
+
+
 
 
 
@@ -78,7 +81,7 @@ DELETE http://localhost:8080/api/singers/ffdffd02-505c-4d1c-af3d-f3555c9b9830
 
 ### Patch singer
 
-PUT http://localhost:8080/api/singer/ffdffd02-505c-4d1c-af3d-f3555c9b9830
+PATCH http://localhost:8080/api/singer/ffdffd02-505c-4d1c-af3d-f3555c9b9828
 Content-Type: application/json
 Authorization: Basic a2V2aW46dXNlcnVzZXI=
 
@@ -86,6 +89,8 @@ Authorization: Basic a2V2aW46dXNlcnVzZXI=
   "name": "Justin Timberlake",
   "age": 75
 }
+
+
 
 
 
