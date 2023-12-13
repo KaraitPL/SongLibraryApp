@@ -41,7 +41,7 @@ public interface SongController {
             PutSongRequest request
     );
 
-    @PutMapping("/api/songs/{id}/update")
+    @PatchMapping("/api/songs/{id}")
     @ResponseStatus(HttpStatus.ACCEPTED)
     void patchSong(
             @PathVariable("id")
@@ -56,6 +56,7 @@ public interface SongController {
             @PathVariable("id")
             UUID id
     );
+
 
 
 
