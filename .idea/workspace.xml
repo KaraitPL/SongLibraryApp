@@ -4,45 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edaff707-f363-47b9-93bf-074d27fefdc4" name="Changes" comment="Lab 3 finished">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requests.http" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/CommandLine/CommandRunner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/Data/DataInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/Singer/Singer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/Singer/SingerRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/Singer/SingerService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/Singer/controller/SingerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/Singer/controller/SingerControllerImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/Singer/dto/GetSingerResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/Singer/dto/GetSingersResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/Singer/dto/PatchSingerRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/Singer/dto/PutSingerRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/Singer/function/RequestToSingerFunction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/Singer/function/SingerToResponseFunction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/Singer/function/SingersToResponseFunction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/Singer/function/UpdateSingerWithRequestFunction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/Song/Song.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/Song/SongRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/Song/SongService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/Song/controller/SongController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/Song/controller/SongControllerImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/Song/dto/GetSongResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/Song/dto/GetSongsResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/Song/dto/PatchSongRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/Song/dto/PutSongRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/Song/function/RequestToSongFunction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/Song/function/SongToResponseFunction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/Song/function/SongsToResponseFunction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/Song/function/UpdateSongWithRequestFunction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SongLibraryApp/SongLibraryAppApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/SongLibraryApp/SongLibraryAppApplicationTests.java" beforeDir="false" />
+    <list default="true" id="edaff707-f363-47b9-93bf-074d27fefdc4" name="Changes" comment="Lab 4 - files created">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,23 +38,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Lab3&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Lab3",
+    "last_opened_file_path": "C:/Users/Oskar/IdeaProjects/SongLibraryApp/song-library-app-singers",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="HTTP Request.All in requests">
     <configuration name="All in requests" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/requests.http">
       <method v="2" />
@@ -139,6 +103,9 @@
       <workItem from="1700160460554" duration="3685000" />
       <workItem from="1700172353038" duration="71000" />
       <workItem from="1702491251894" duration="996000" />
+      <workItem from="1702492598115" duration="693000" />
+      <workItem from="1702493303612" duration="10000" />
+      <workItem from="1702493337661" duration="14000" />
     </task>
     <task id="LOCAL-00001" summary="Lab 3 finished">
       <option name="closed" value="true" />
@@ -148,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700164130471</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Lab 4 - files created">
+      <option name="closed" value="true" />
+      <created>1702492677994</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702492677994</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +142,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Lab 3 finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab 3 finished" />
+    <MESSAGE value="Lab 4 - files created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab 4 - files created" />
   </component>
 </project>
