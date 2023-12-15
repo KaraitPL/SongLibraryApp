@@ -1,0 +1,117 @@
+### Get all songs
+
+GET http://localhost:8080/api/songs
+
+### Get single song
+
+GET http://localhost:8080/api/songs/ffdffd02-505c-4d1c-af3d-f3555c9b9827
+
+### Get single song, not existing
+
+GET http://localhost:8080/api/songs/3c6f1eb1-8069-44ab-988f-d7fed2b65d88
+
+### Create new song
+
+PUT http://localhost:8080/api/songs/ffdffd02-505c-4d1c-af3d-f3555c9b9827
+Content-Type: application/json
+Authorization: Basic a2V2aW46dXNlcnVzZXI=
+
+{
+  "name": "Moves Like Jagger",
+  "releaseYear": 2010,
+  "singer": "ffdffd02-505c-4d1c-af3d-f3555c9b9829"
+}
+
+### Delete song
+
+DELETE http://localhost:8080/api/songs/ffdffd02-505c-4d1c-af3d-f3555c9b9822
+
+### Patch song
+
+PATCH http://localhost:8080/api/songs/ffdffd02-505c-4d1c-af3d-f3555c9b9827
+Content-Type: application/json
+Authorization: Basic a2V2aW46dXNlcnVzZXI=
+
+{
+  "name": "Moves Like Jagger",
+  "releaseYear": 1794
+}
+
+
+
+
+
+
+
+
+### Get all singers
+
+GET http://localhost:8080/api/singers
+
+### Get single singer
+
+GET http://localhost:8080/api/singers/ffdffd02-505c-4d1c-af3d-f3555c9b9829
+
+### Get single singer, not existing
+
+GET http://localhost:8080/api/singers/ffdffd02-505c-4d1c-af3d-f3555c9b9831
+
+### Get singer songs
+
+GET http://localhost:8080/api/singers/ffdffd02-505c-4d1c-af3d-f3555c9b9829/songs
+
+### Get singer songs, not existing
+
+GET http://localhost:8080/api/singers/ffdffd02-505c-4d1c-af3d-f3555c9b9831/songs
+
+### Create new singer
+
+PUT http://localhost:8080/api/singer/ffdffd02-505c-4d1c-af3d-f3555c9b9831
+Content-Type: application/json
+Authorization: Basic a2V2aW46dXNlcnVzZXI=
+
+{
+  "name": "Elton John",
+  "age": 76
+}
+
+### Delete singer
+
+DELETE http://localhost:8080/api/singers/ffdffd02-505c-4d1c-af3d-f3555c9b9830
+
+### Patch singer
+
+PATCH http://localhost:8080/api/singer/ffdffd02-505c-4d1c-af3d-f3555c9b9828
+Content-Type: application/json
+Authorization: Basic a2V2aW46dXNlcnVzZXI=
+
+{
+  "name": "Justin Timberlake",
+  "age": 75
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

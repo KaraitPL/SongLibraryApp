@@ -1,0 +1,6 @@
+{
+  "timestamp": "2023-11-17T13:25:50.245+00:00",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "path": "/api/songs/ffdffd02-505c-4d1c-af3d-f3555c9b9827/update"
+}
