@@ -19,7 +19,6 @@ import org.springframework.web.server.ResponseStatusException;
 import java.util.UUID;
 
 @RestController
-@Log
 public class SingerControllerImpl implements SingerController {
 
     private final SingerService service;

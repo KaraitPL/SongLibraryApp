@@ -1,0 +1,10 @@
+{
+  "id": "ffdffd02-505c-4d1c-af3d-f3555c9b9827",
+  "name": "Cry Me a River",
+  "releaseYear": 2002,
+  "singer": {
+    "id": "ffdffd02-505c-4d1c-af3d-f3555c9b9830",
+    "age": 42,
+    "name": "Justin Timberlake"
+  }
+}

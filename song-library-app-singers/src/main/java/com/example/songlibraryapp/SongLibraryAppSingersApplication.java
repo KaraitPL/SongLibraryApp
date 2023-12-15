@@ -15,7 +15,7 @@ public class SongLibraryAppSingersApplication {
 	}
 
 	@Bean
-	public RestTemplate restTemplate(@Value("${song-library-app.singers.url}") String baseUrl) {
+	public RestTemplate restTemplate(@Value("${song-library-app.songs.url}") String baseUrl) {
 		return new RestTemplateBuilder().rootUri(baseUrl).build();
 	}
 

@@ -14,8 +14,8 @@ public class SingerEventRestRepository implements SingerEventRepository {
     private final RestTemplate restTemplate;
 
     @Autowired
-    public SingerEventRestRepository(RestTemplate template){
-        this.restTemplate = template;
+    public SingerEventRestRepository(RestTemplate restTemplate){
+        this.restTemplate = restTemplate;
     }
 
     @Override

@@ -1,0 +1,14 @@
+{
+  "singers": [
+    {
+      "id": "ffdffd02-505c-4d1c-af3d-f3555c9b9828",
+      "name": "Justin Timberlake",
+      "age": 75
+    },
+    {
+      "id": "ffdffd02-505c-4d1c-af3d-f3555c9b9829",
+      "name": "Adam Levine",
+      "age": 44
+    }
+  ]
+}

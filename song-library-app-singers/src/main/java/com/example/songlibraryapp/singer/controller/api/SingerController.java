@@ -33,7 +33,7 @@ public interface SingerController {
             PutSingerRequest request
     );
 
-    @PatchMapping("/api/singer/{id}")
+    @PatchMapping("/api/singers/{id}")
     @ResponseStatus(HttpStatus.OK)
     void patchSinger(
             @PathVariable("id")

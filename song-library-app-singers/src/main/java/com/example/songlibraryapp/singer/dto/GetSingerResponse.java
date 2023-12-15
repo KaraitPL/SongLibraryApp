@@ -14,21 +14,8 @@ import java.util.UUID;
 @EqualsAndHashCode
 public class GetSingerResponse {
 
-    @Getter
-    @Setter
-    @Builder
-    @NoArgsConstructor
-    @AllArgsConstructor(access = AccessLevel.PRIVATE)
-    @ToString
-    @EqualsAndHashCode
-    public static class Song{
-        private String name;
-        private int releaseYear;
-    }
     private UUID id;
     private String name;
     private int age;
 
-    @Singular
-    private List<Song> songs;
 }

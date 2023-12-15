@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="edaff707-f363-47b9-93bf-074d27fefdc4" name="Changes" comment="Lab 4 - files created">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +35,9 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2YGmn7ICGePkd4t2NxO4mC7cE1Z" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,7 +52,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "Lab3",
-    "last_opened_file_path": "C:/Users/Oskar/IdeaProjects/SongLibraryApp/song-library-app-singers",
+    "last_opened_file_path": "C:/Users/alexp/IdeaProjects/SongLibraryApp/song-library-app-songs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -106,6 +110,7 @@
       <workItem from="1702492598115" duration="693000" />
       <workItem from="1702493303612" duration="10000" />
       <workItem from="1702493337661" duration="14000" />
+      <workItem from="1702547594518" duration="48000" />
     </task>
     <task id="LOCAL-00001" summary="Lab 3 finished">
       <option name="closed" value="true" />

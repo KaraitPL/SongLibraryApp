@@ -1,0 +1,535 @@
+GET http://localhost:8080/api/singers
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T151155.200.json
+
+###
+
+PATCH http://localhost:8080/api/singer/ffdffd02-505c-4d1c-af3d-f3555c9b9828
+Content-Type: application/json
+Authorization: Basic a2V2aW46dXNlcnVzZXI=
+Content-Length: 46
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Justin Timberlake",
+  "age": 75
+}
+
+###
+
+GET http://localhost:8080/api/singers
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T151133.200.json
+
+###
+
+GET http://localhost:8080/api/singers/ffdffd02-505c-4d1c-af3d-f3555c9b9831
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T151119.404.json
+
+###
+
+GET http://localhost:8080/api/songs
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T151101.200.json
+
+###
+
+GET http://localhost:8080/api/singers
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T151053.200.json
+
+###
+
+DELETE http://localhost:8080/api/singers/ffdffd02-505c-4d1c-af3d-f3555c9b9830
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:8080/api/singers/ffdffd02-505c-4d1c-af3d-f3555c9b9829/songs
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T151034.200.json
+
+###
+
+GET http://localhost:8080/api/singers/ffdffd02-505c-4d1c-af3d-f3555c9b9829
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T151017.200.json
+
+###
+
+GET http://localhost:8080/api/singers
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T151006.200.json
+
+###
+
+GET http://localhost:8080/api/songs
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T150952.200.json
+
+###
+
+PATCH http://localhost:8080/api/singer/ffdffd02-505c-4d1c-af3d-f3555c9b9830
+Content-Type: application/json
+Authorization: Basic a2V2aW46dXNlcnVzZXI=
+Content-Length: 46
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Justin Timberlake",
+  "age": 75
+}
+
+<> 2023-11-17T150627.404.json
+
+###
+
+DELETE http://localhost:8080/api/singers/ffdffd02-505c-4d1c-af3d-f3555c9b9830
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+PUT http://localhost:8080/api/singer/ffdffd02-505c-4d1c-af3d-f3555c9b9831
+Content-Type: application/json
+Authorization: Basic a2V2aW46dXNlcnVzZXI=
+Content-Length: 39
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Elton John",
+  "age": 76
+}
+
+###
+
+GET http://localhost:8080/api/singers/ffdffd02-505c-4d1c-af3d-f3555c9b9831/songs
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T150626-2.404.json
+
+###
+
+GET http://localhost:8080/api/singers/ffdffd02-505c-4d1c-af3d-f3555c9b9829/songs
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T150626-4.200.json
+
+###
+
+GET http://localhost:8080/api/singers/ffdffd02-505c-4d1c-af3d-f3555c9b9831
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T150626-1.404.json
+
+###
+
+GET http://localhost:8080/api/singers/ffdffd02-505c-4d1c-af3d-f3555c9b9829
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T150626-3.200.json
+
+###
+
+GET http://localhost:8080/api/singers
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T150626-2.200.json
+
+###
+
+PATCH http://localhost:8080/api/songs/ffdffd02-505c-4d1c-af3d-f3555c9b9827
+Content-Type: application/json
+Authorization: Basic a2V2aW46dXNlcnVzZXI=
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Moves Like Jagger",
+  "releaseYear": 1794
+}
+
+###
+
+DELETE http://localhost:8080/api/songs/ffdffd02-505c-4d1c-af3d-f3555c9b9822
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+PUT http://localhost:8080/api/songs/ffdffd02-505c-4d1c-af3d-f3555c9b9827
+Content-Type: application/json
+Authorization: Basic a2V2aW46dXNlcnVzZXI=
+Content-Length: 108
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Moves Like Jagger",
+  "releaseYear": 2010,
+  "singer": "ffdffd02-505c-4d1c-af3d-f3555c9b9829"
+}
+
+###
+
+GET http://localhost:8080/api/songs/3c6f1eb1-8069-44ab-988f-d7fed2b65d88
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T150626.404.json
+
+###
+
+GET http://localhost:8080/api/songs/ffdffd02-505c-4d1c-af3d-f3555c9b9827
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T150626-1.200.json
+
+###
+
+GET http://localhost:8080/api/songs
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T150626.200.json
+
+###
+
+GET http://localhost:8080/api/songs
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T145825.200.json
+
+###
+
+PATCH http://localhost:8080/api/singer/ffdffd02-505c-4d1c-af3d-f3555c9b9830
+Content-Type: application/json
+Authorization: Basic a2V2aW46dXNlcnVzZXI=
+Content-Length: 46
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Justin Timberlake",
+  "age": 75
+}
+
+###
+
+PATCH http://localhost:8080/api/singer/ffdffd02-505c-4d1c-af3d-f3555c9b9830
+Content-Type: application/json
+Authorization: Basic a2V2aW46dXNlcnVzZXI=
+Content-Length: 46
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Justin Timberlake",
+  "age": 75
+}
+
+<> 2023-11-17T143431-2.404.json
+
+###
+
+DELETE http://localhost:8080/api/singers/ffdffd02-505c-4d1c-af3d-f3555c9b9830
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+PUT http://localhost:8080/api/singer/ffdffd02-505c-4d1c-af3d-f3555c9b9831
+Content-Type: application/json
+Authorization: Basic a2V2aW46dXNlcnVzZXI=
+Content-Length: 39
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Elton John",
+  "age": 76
+}
+
+###
+
+GET http://localhost:8080/api/singers/ffdffd02-505c-4d1c-af3d-f3555c9b9831/songs
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T143431-1.404.json
+
+###
+
+GET http://localhost:8080/api/singers/ffdffd02-505c-4d1c-af3d-f3555c9b9829/songs
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T143431-2.200.json
+
+###
+
+GET http://localhost:8080/api/singers/ffdffd02-505c-4d1c-af3d-f3555c9b9831
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T143431.404.json
+
+###
+
+GET http://localhost:8080/api/singers/ffdffd02-505c-4d1c-af3d-f3555c9b9829
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T143431-1.200.json
+
+###
+
+GET http://localhost:8080/api/singers
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T143431.200.json
+
+###
+
+PATCH http://localhost:8080/api/songs/ffdffd02-505c-4d1c-af3d-f3555c9b9827
+Content-Type: application/json
+Authorization: Basic a2V2aW46dXNlcnVzZXI=
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Moves Like Jagger",
+  "releaseYear": 1794
+}
+
+###
+
+DELETE http://localhost:8080/api/songs/ffdffd02-505c-4d1c-af3d-f3555c9b9822
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+PUT http://localhost:8080/api/songs/ffdffd02-505c-4d1c-af3d-f3555c9b9827
+Content-Type: application/json
+Authorization: Basic a2V2aW46dXNlcnVzZXI=
+Content-Length: 108
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Moves Like Jagger",
+  "releaseYear": 2010,
+  "singer": "ffdffd02-505c-4d1c-af3d-f3555c9b9829"
+}
+
+###
+
+GET http://localhost:8080/api/songs/3c6f1eb1-8069-44ab-988f-d7fed2b65d88
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T143430.404.json
+
+###
+
+GET http://localhost:8080/api/songs/ffdffd02-505c-4d1c-af3d-f3555c9b9827
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T143430-1.200.json
+
+###
+
+GET http://localhost:8080/api/songs
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T143430.200.json
+
+###
+
+GET http://localhost:8080/api/singers
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T143342.200.json
+
+###
+
+PATCH http://localhost:8080/api/singer/ffdffd02-505c-4d1c-af3d-f3555c9b9830
+Content-Type: application/json
+Authorization: Basic a2V2aW46dXNlcnVzZXI=
+Content-Length: 46
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Justin Timberlake",
+  "age": 75
+}
+
+###
+
+GET http://localhost:8080/api/songs
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T142723.200.json
+
+###
+
+PATCH http://localhost:8080/api/songs/ffdffd02-505c-4d1c-af3d-f3555c9b9827
+Content-Type: application/json
+Authorization: Basic a2V2aW46dXNlcnVzZXI=
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Moves Like Jagger",
+  "releaseYear": 1794
+}
+
+###
+
+PATCH http://localhost:8080/api/songs/ffdffd02-505c-4d1c-af3d-f3555c9b9827/update
+Content-Type: application/json
+Authorization: Basic a2V2aW46dXNlcnVzZXI=
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Moves Like Jagger",
+  "releaseYear": 1794
+}
+
+<> 2023-11-17T142550.405.json
+
+###
+
+GET http://localhost:8080/api/singers
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T131319.200.json
+
+###
+
+GET http://localhost:8080/api/singers/ffdffd02-505c-4d1c-af3d-f3555c9b9829
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T131311.200.json
+
+###
+
+GET http://localhost:8080/api/songs/ffdffd02-505c-4d1c-af3d-f3555c9b9827
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-17T131301.200.json
+
+###
+
+PUT http://localhost:8080/api/songs/ffdffd02-505c-4d1c-af3d-f3555c9b9827
+Content-Type: application/json
+Authorization: Basic a2V2aW46dXNlcnVzZXI=
+Content-Length: 74
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "Moves Like Jagger",
+  "releaseYear": 2010,
+  "singer": null
+}
+
+<> 2023-11-17T125909.500.json
+
+###
+

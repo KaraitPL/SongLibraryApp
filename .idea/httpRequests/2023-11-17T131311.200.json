@@ -1,0 +1,19 @@
+{
+  "id": "ffdffd02-505c-4d1c-af3d-f3555c9b9829",
+  "name": "Adam Levine",
+  "age": 44,
+  "songs": [
+    {
+      "name": "Payphone",
+      "releaseYear": 2012
+    },
+    {
+      "name": "Memories",
+      "releaseYear": 2021
+    },
+    {
+      "name": "Animals",
+      "releaseYear": 2014
+    }
+  ]
+}
