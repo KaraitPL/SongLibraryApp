@@ -19,7 +19,7 @@ Authorization: Basic a2V2aW46dXNlcnVzZXI=
 {
   "name": "Moves Like Jagger",
   "releaseYear": 2010,
-  "singer": "ffdffd02-505c-4d1c-af3d-f3555c9b9829"
+  "singer": "ffdffd02-505c-4d1c-af3d-f3555c9b9831"
 }
 
 ### Delete song
@@ -77,7 +77,7 @@ Authorization: Basic a2V2aW46dXNlcnVzZXI=
 
 ### Delete singer
 
-DELETE http://localhost:8083/api/singers/ffdffd02-505c-4d1c-af3d-f3555c9b9830
+DELETE http://localhost:8083/api/singers/ffdffd02-505c-4d1c-af3d-f3555c9b9829
 
 ### Patch singer
 
