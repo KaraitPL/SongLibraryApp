@@ -1,0 +1,31 @@
+<article *ngIf="singer">
+    <p><b>Id: </b> {{ singer.id }}</p>
+    <p><b>Name: </b>{{ singer.name }}</p>
+    <p><b>Age: </b> {{ singer.age }}</p>
+    <p><b>Songs:</b></p>
+    <p *ngFor="let song of singerSongs.songs">
+        - {{ song.name }}
+        <a [routerLink]="['/songs', song.id, 'edit']">Edit</a>
+        <a> </a>
+        <a style="cursor:pointer" (click)="onDelete(song)"> Delete</a>
+    </p>
+    <form class="form" #form="ngForm" (ngSubmit)="onSubmit()">
+        <div>
+            <h2>Add new song to {{ singer.name }}</h2>
+        </div>
+
+        <div>
+            <label for="id">Id:</label>
+            <input id="id" name="id" [(ngModel)]="newSongId" />
+        </div>
+        <div>
+            <label for="name">Name:</label>
+            <input id="name" name="name" [(ngModel)]="newSong.name" />
+        </div>
+        <div>
+            <label for="releaseYear">Release year:</label>
+            <input id="releaseYear" name="releaseYear" [(ngModel)]="newSong.releaseYear" />
+        </div>
+        <button type="submit">Add new song</button>
+    </form>
+</article>
