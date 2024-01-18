@@ -1,0 +1,46 @@
+<article>
+    <header><h2>Singers</h2></header>
+    <div class="container">
+        <table *ngIf="singers">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>View</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let singer of singers.singers">
+                <td>{{ singer.name }}</td>
+                <td>
+                    <a [routerLink]="['/singers', singer.id]">View</a>
+                </td>
+                <td>
+                    <a [routerLink]="['/singers', singer.id, 'edit']">Edit</a>
+                </td>
+                <td>
+                    <button (click)="onDelete(singer)">Delete</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <form class="form" #form="ngForm" (ngSubmit)="onSubmit()">
+        <div><h2>Add new singer</h2></div>
+
+        <div>
+            <label for="id">Id:</label>
+            <input id="id" name="id" [(ngModel)]="newSinger.id" />
+        </div>
+        <div>
+            <label for="name">Name:</label>
+            <input id="name" name="name" [(ngModel)]="newSinger.name" />
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input id="age" name="age" [(ngModel)]="newSinger.age"/>
+        </div>
+        <button type="submit">Add new singer</button>
+    </form>
+</article>
