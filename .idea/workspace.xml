@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edaff707-f363-47b9-93bf-074d27fefdc4" name="Changes" comment="Lab 4 - files created" />
+    <list default="true" id="edaff707-f363-47b9-93bf-074d27fefdc4" name="Changes" comment="Lab 4 - files created">
+      <change afterPath="$PROJECT_DIR$/song-library-app-gateway/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/song-library-app-gateway/build.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/song-library-app-ng/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/song-library-app-ng/build.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/song-library-app-ng/docker/etc/nginx/templates/default.conf.template" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/song-library-app-singers/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/song-library-app-singers/build.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/song-library-app-songs/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/song-library-app-songs/build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/song-library-app-ng/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/song-library-app-ng/.idea/misc.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,8 +60,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Lab5",
-    "last_opened_file_path": "C:/Users/Oskar/IdeaProjects/SongLibraryApp/song-library-app-ng",
+    "git-widget-placeholder": "Lab6",
+    "last_opened_file_path": "C:/Users/Oskar/IdeaProjects/SongLibraryApp/song-library-app-gateway",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -100,6 +112,10 @@
       <workItem from="1702493337661" duration="14000" />
       <workItem from="1702547594518" duration="48000" />
       <workItem from="1704359547559" duration="297000" />
+      <workItem from="1705618368607" duration="31000" />
+      <workItem from="1705623903111" duration="1639000" />
+      <workItem from="1705625739348" duration="1295000" />
+      <workItem from="1705627107405" duration="50000" />
     </task>
     <task id="LOCAL-00001" summary="Lab 3 finished">
       <option name="closed" value="true" />
